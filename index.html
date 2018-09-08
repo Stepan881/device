@@ -2,7 +2,6 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&amp;subset=cyrillic" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/normalize.css">
     <link rel="stylesheet" type="text/css" href="css/styles.css">
     <title>HTML Academy: Device</title>
@@ -41,15 +40,17 @@
       </header>
 <!-- ///////////////////////////// -->
       <main class="main-catalog">
-        <section class="main-sidebar">
+        <article class="main-sidebar">
+          <h1 class="visually-hidden">Магазин техники Device</h1>
           <!-- main-sidebar 1 -->
           <div class="main-intro">
+            <h2 class="visually-hidden">Селфи палка</h2>
             <div class="main-photo">
-              <img src="img/slider-1.png" alt="" width="100">
+              <img src="img/slider-1.png" alt="Селфи палка" width="100">
             </div>
             <div class="main-content">
               <div class="main-ligo">
-                <h2>Делай селфи, как Бен Стиллер! </h2>
+                <h2>Делай селфи, как Бен Стиллер!</h2>
                 <p>Самая длинная палка для селфи доступна в нашем магазине.
                 Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.
                 </p>
@@ -78,12 +79,13 @@
           </div>
           <!-- main-sidebar 2 -->
           <div class="main-intro">
+            <h2 class="visually-hidden">Фитнес-браслет</h2>
             <div class="main-photo">
-              <img src="img/slider-2.png" alt="" width="100">
+              <img src="img/slider-2.png" alt="Фитнес-браслет" width="100">
             </div>
             <div class="main-content">
               <div class="main-ligo">
-                <h2>Худеем правильно!</h2>
+                <h3>Худеем правильно!</h3>
                 <p>Мотивирующие фитнес-браслеты помогут найти в себе силы
                     не пропускать занятия и соблюдать диету.
                 </p>
@@ -104,12 +106,13 @@
           </div>
           <!-- main-sidebar 3 -->
           <div class="main-intro">
+            <h2 class="visually-hidden">Квадрокоптер</h2>
             <div class="main-photo">
-              <img src="img/slider-3.png" alt="" width="100">
+              <img src="img/slider-3.png" alt="Квадрокоптер" width="100">
             </div>
             <div class="main-content">
               <div class="main-ligo">
-                <h2>Порхает как бабочка, жалит как пчела!</h2>
+                <h3>Порхает как бабочка, жалит как пчела!</h3>
                 <p>Этот обычный, на первый взгляд, квадрокоптер оснащен
                   мощным лазером, замаскированным под стандартную камеру.
                 </p>
@@ -132,48 +135,50 @@
               </div>
             </div>
           </div>
-        </section>
+        </article>
 <!-- main-sidebar end -->
         <section class="-main-ico">
+          <h2 class="visually-hidden">Популярные товары</h2>
           <div class="ico">
-            <div class="ico-img">
-              <img src="img/ico/popular-1.png" alt="фон">
+            <a href="#" aria-label="Виртуальная реальность">
+              <img src="img/ico/popular-1.png" alt="Виртуальная реальность">
               <span>Виртуальная реальность</span>
-            </div>
+            </a>
           </div>
           <div class="ico">
-            <div class="ico-img">
-              <img src="img/ico/popular-3.png" alt="фон">
+            <a href="#" aria-label="Моноподы для селфи">
+              <img src="img/ico/popular-2.png" alt="Моноподы для селфи">
               <span>Моноподы для селфи</span>
-            </div>
+            </a>
           </div>
           <div class="ico">
-            <div class="ico-img">
-              <img src="img/ico/popular-3.png" alt="фон">
+            <a href="#" aria-label="Моноподы для селфи">
+              <img src="img/ico/popular-3.png" alt="Экшн-камеры">
               <span>Экшн-камеры</span>
-            </div>
+            </a>
           </div>
           <div class="ico">
-            <div class="ico-img">
-              <img src="img/ico/popular-4.png" alt="фон">
+            <a href="#" aria-label="Фитнес-браслеты">
+              <img src="img/ico/popular-4.png" alt="Фитнес-браслеты">
               <span>Фитнес-браслеты</span>
-            </div>
+            </a>
           </div>
           <div class="ico">
-            <div class="ico-img">
-              <img src="img/ico/popular-5.png" alt="фон">
+            <a href="#" aria-label="Умные часы">
+              <img src="img/ico/popular-5.png" alt="Умные часы">
               <span>Умные часы</span>
-            </div>
+            </a>
           </div>
           <div class="ico">
-            <div class="ico-img">
-              <img src="img/ico/popular-6.png" alt="фон">
+            <a href="#" aria-label="Квадрокоптеры">
+              <img src="img/ico/popular-6.png" alt="Квадрокоптеры">
               <span>Квадрокоптеры</span>
-            </div>
+            </a>
           </div>
         </section>
 <!-- main-sidebar end -->
         <section class="main-delivery">
+          <h2 class="visually-hidden">Доставка и гарантия</h2>
           <div class="delivery-menu">
             <h2 class="visuali-hidden">Меню</h2>
             <ul>
@@ -190,20 +195,21 @@
         </section>
 <!--  end -->
         <section class="manufacturer">
+            <h2 class="visually-hidden">Производители</h2>
            <div class="manufacturer-item">
-               <h2 class="visuali-hidden">DJI</h2>
-               <img src="img/logo/logo-1.png" alt="DJI" height="50">
+               <h3 class="visuali-hidden">Dji</h3>
+               <img src="img/logo/logo-1.png" alt="Dji" height="50">
            </div>
            <div class="manufacturer--item">
-               <h2 class="visuali-hidden">SP</h2>
+               <h3 class="visuali-hidden">SP</h3>
                <img src="img/logo/logo-2.png" alt="SP" height="50">
            </div>
            <div class="manufacturer--item">
-               <h2 class="visuali-hidden">GoPro</h2>
+               <h3 class="visuali-hidden">GoPro</h3>
                <img src="img/logo/logo-3.png" alt="GoPro" height="50">
            </div>
            <div class="manufacturer--item">
-               <h2 class="visuali-hidden">VIVE</h2>
+               <h3 class="visuali-hidden">VIVE</h3>
                <img src="img/logo/logo-4.png" alt="VIVE" height="50">
            </div>
         </section>
@@ -224,15 +230,15 @@
             <h2>Контакты</h2>
             <p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
             <div class="main-map">
-              <h2c class="visuali-hidden">Мф на карте</h2>
+              <h2 class="visuali-hidden">Мы на карте</h2>
             </div>
             <a href="#">НАпишите нам</a>
           </div>
         </section>
 <!-- ///////////////////////////// --><!-- ///////////////////////////// -->
         <section class="popap">
-          <a href="#"aria-label="Закрыть">X</a>
-          <h2 class="visually-hidden">Отзывы</h2>
+          <a href="#" aria-label="Закрыть">X</a>
+          <h2 class="visually-hidden">Отзыв</h2>
           <form class="popap-write" action="https://echo.htmlacademy.ru" method="post">
             <div class="popap-login">
               <label for="login">Ваше имя:</label>
@@ -243,13 +249,15 @@
               <input type="email" id="mail" name="mail" value="email@example.com">
             </div>
             <div class="popap-text">
-              <label for="comment">Текст письма:</label>
-              <textarea name="comment" cols="50" rows="5"></textarea>
+              <label for="texts">Текст письма:
+              <textarea id="texts" name="texts" cols="50" rows="5">В свободной форме</textarea>
+              </label>
             </div>
             <button class="popap-btn" type="submit" title="Отправить">Отправить</button>
           </form>
         </section>
         <section class="map">
+          <h2 class="visually-hidden">Мы на карте</h2>
           <img src="img/map-big.png" alt="Мы на карте">
         </section>
 <!-- ///////////////////////////// -->
@@ -267,29 +275,34 @@
         <div class="addres">
           <address>г. Москва, ул. Строителей, 15</address>
           <ul>
-            <li>Доставка</li>
-            <li>Гарантия</li>
-            <li>Контакты</li>
+            <li><a href="#" aria-label="Доставка">Доставка</a></li>
+            <li><a href="#" aria-label="Гарантия">Гарантия</a></li>
+            <li><a href="#" aria-label="Контакты">Контакты</a></li>
           </ul>
           <span>Тел.: +7 (495) 495-95-95</span>
         </div>
         <div class="social">
           <ul>
-
             <li>
-              <a href="#" aria-label="facebook">facebook</a>
+              <a href="#" aria-label="facebook">
+              <span class="visually-hidden">Мы в facebook</span>
               <img src="img/facebook.png" alt="facebook">
+              </a>
             </li>
             <li>
-              <a href="#" aria-label="instagram">instagram</a>
+              <a href="#" aria-label="instagram">
+              <span class="visually-hidden">Мы в instagram</span>
               <img src="img/insta.png" alt="instagram">
+              </a>
             </li>
             <li>
-              <a href="#" aria-label="twitter">twitter</a>
+              <a href="#" aria-label="twitter">
+              <span class="visually-hidden">Мы в twitter</span>
               <img src="img/twitter.png" alt="twitter">
+              </a>
             </li>
-            <img src="img/logo-html.png" alt="logo html academy">
           </ul>
+          <img src="img/logo-html.png" alt="logo html academy">
         </div>
       </footer>
     </div>
