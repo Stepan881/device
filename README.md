@@ -1,6 +1,6 @@
 # device
 
-# Личный проект «Седона»
+# Личный проект «device»
 
 * Студент: [Степан Колчин](https://up.htmlacademy.ru/htmlcss/22/user/844681).
 * Наставник: [Никита Рогатнев](https://vk.com/rogatnev_nikita).
