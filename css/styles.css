@@ -1,3 +1,118 @@
 @font-face {
+    font-family: 'gilroyextrabold';
+    src: url('gilroyextrabold/gilroyextrabold-webfont.eot');
+    src: url('gilroyextrabold/gilroyextrabold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('gilroyextrabold/gilroyextrabold-webfont.woff2') format('woff2'),
+         url('gilroyextrabold/gilroyextrabold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'gilroylight';
+    src: url('gilroylight/gilroylight-webfont.eot');
+    src: url('gilroylight/gilroylight-webfont.eot?#iefix') format('embedded-opentype'),
+         url('gilroylight/gilroylight-webfont.woff2') format('woff2'),
+         url('gilroylight/gilroylight-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'open_sanslight';
+    src: url('open_sanslight/opensans-light-webfont.eot');
+    src: url('open_sanslight/opensans-light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('open_sanslight/opensans-light-webfont.woff2') format('woff2'),
+         url('open_sanslight/opensans-light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'open_sansregular';
+    src: url('open_sansregular/opensans-regular-webfont.eot');
+    src: url('open_sansregular/opensans-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('open_sansregular/opensans-regular-webfont.woff2') format('woff2'),
+         url('open_sansregular/opensans-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
 
+html{
+  margin: 0;
+  padding: 0;
+  font-family: "gilroyextrabold", Arial, sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 400;
+  text-transform: uppercase;
+  background-color: #ffffff;
+  color: #000000;
+}
+.visually-hidden {
+  margin: -1px;
+  padding: 0;
+  position: absolute;
+  height: 1px; width: 1px;
+  overflow: hidden;
+  clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+  clip: rect(1px, 1px, 1px, 1px);
+  border: 0;
+}
+.content{
+  width: 1160px;
+  margin: 0 auto;
+  padding: 0
+}
+.header{
+  position: relative;
+}
+.header a{
+  text-decoration: none;
+}
+.navigation{
+  margin-top: 40px;
+  padding: 30px 60px 0;
+  min-height: 300px;
+  background-color: #f7e296;
+}
+.header-logo{
+  position: absolute;
+  top: -26px;
+  left: 58px;
+  font-size: 48px;
+  line-height: 48px;
+  font-weight: 800;
+}
+.site-navigation-menu{
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  font-family: "open_sanslight", Arial, sans-serif;
+  text-transform: capitalize;
+  font-size: 15px;
+  line-height: 30px;
+  font-weight: 400;
+  width: 1040px;
+}
+.site-navigation-menu li:nth-child(1){
+  width: 240px;
+}
+.site-navigation-menu li:nth-child(n+2){
+  width: 100px;
+  text-align: right;
+}
+.site-navigation-menu li:nth-child(2){
+  text-align: left;
+}
+.site-navigation-menu input{
+  outline: none;
+  background-color: inherit;
+  border: none;
+}
+li.navigation-menu {
+  margin-left: auto;
+}
+.navigation ul,
+.navigation li{
+
+  list-style-type: none;
 }
