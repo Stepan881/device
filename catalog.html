@@ -46,98 +46,101 @@
         </section>
         <section class="search-product">
           <h2 class="visuali-hidden">Поиск товаров</h2>
-          <form class="catalog-search" action="https://echo.htmlacademy.ru" method="post">
-            <div class="search-price">
-              <h3>Фильтр:</h3>
-              <span>Стоимость</span>
-              <div class="search-scroll">   СКРОЛЛ
-                <span>от 0</span>
-                <span>до 5000</span>
+          <aside class="search-products">
+            <form class="catalog-search" action="https://echo.htmlacademy.ru" method="post">
+              <div class="search-price">
+                <h3>Фильтр:</h3>
+                <span>Стоимость</span>
+                <div class="search-scroll">   СКРОЛЛ
+                  <span>от 0</span>
+                  <span>до 5000</span>
+                </div>
+                <div class="search-color">
+                  <label for="black" tabindex="0">
+                    <input type="checkbox" class="visually-hidden checkbox" name="black" id="black" aria-label="Черный" checked>
+                      <span class="checkbox-item"></span>
+                      Черный
+                  </label>
+                  <label for="white" tabindex="0">
+                    <input type="checkbox" class="visually-hidden checkbox" name="white" id="white" aria-label="Белый">
+                      <span class="checkbox-item"></span>
+                      Белый
+                  </label>
+                  <label for="blue" tabindex="0">
+                    <input type="checkbox" class="visually-hidden checkbox" name="blue" id="blue" aria-label="Синий" checked>
+                      <span class="checkbox-item"></span>
+                      Синий
+                  </label>
+                  <label for="red" tabindex="0">
+                    <input type="checkbox" class="visually-hidden checkbox" name="red" id="red" aria-label="Красный" checked>
+                      <span class="checkbox-item"></span>
+                      Красный
+                  </label>
+                  <label for="pink" tabindex="0">
+                    <input type="checkbox" class="visually-hidden checkbox" name="pink" id="pink" aria-label="Розовый">
+                      <span class="checkbox-item"></span>
+                      Розовый
+                  </label>
+                </div>
+                <div class="search-blutooth">
+                  <span>blutooth</span>
+                  <label for="blutooth-on">
+                  <input type="radio" id="blutooth-on" name="blutooth" value="Есть" checked>
+                  Есть
+                  </label>
+                  <label for="blutooth-off">
+                  <input type="radio" id="blutooth-off" name="blutooth" value="Нет">
+                  Нет
+                  </label>
+                </div>
+              <button class="search-btn" type="submit" title="Отправить">Отправить</button>
               </div>
-              <div class="search-color">
-                <label for="black" tabindex="0">
-                  <input type="checkbox" class="visually-hidden checkbox" name="black" id="black" aria-label="Черный" checked>
-                    <span class="checkbox-item"></span>
-                    Черный
-                </label>
-                <label for="white" tabindex="0">
-                  <input type="checkbox" class="visually-hidden checkbox" name="white" id="white" aria-label="Белый">
-                    <span class="checkbox-item"></span>
-                    Белый
-                </label>
-                <label for="blue" tabindex="0">
-                  <input type="checkbox" class="visually-hidden checkbox" name="blue" id="blue" aria-label="Синий" checked>
-                    <span class="checkbox-item"></span>
-                    Синий
-                </label>
-                <label for="red" tabindex="0">
-                  <input type="checkbox" class="visually-hidden checkbox" name="red" id="red" aria-label="Красный" checked>
-                    <span class="checkbox-item"></span>
-                    Красный
-                </label>
-                <label for="pink" tabindex="0">
-                  <input type="checkbox" class="visually-hidden checkbox" name="pink" id="pink" aria-label="Розовый">
-                    <span class="checkbox-item"></span>
-                    Розовый
-                </label>
-              </div>
-              <div class="search-blutooth">
-                <span>blutooth</span>
-                <label for="blutooth-on">
-                <input type="radio" id="blutooth-on" name="blutooth" value="Есть" checked>
-                Есть
-                </label>
-                <label for="blutooth-off">
-                <input type="radio" id="blutooth-off" name="blutooth" value="Нет">
-                Нет
-                </label>
-              </div>
-            <button class="search-btn" type="submit" title="Отправить">Отправить</button>
-            </div>
-          </form>
+            </form>
+          </aside>
 <!-- ///////////////////////////// --><!-- ///////////////////////////// --><!-- ///////////////////////////// -->
           <div class="catalog-product">
             <div class="catalog-product-sorting">
               <span>Сортировка:</span>
               <ul>
-                <li>По цене</li>
-                <li>По типу</li>
-                <li>По популярности</li>
+                <li><a href="#" aria-label="По цене">По цене</a></li>
+                <li><a href="#" aria-label="По типу">По типу</a></li>
+                <li><a href="#" aria-label="По популярности">По популярности</a></li>
               </ul>
             </div>
-            <span>Стрелки</span>
+            <span><a href="#" aria-label="Стрелки">Стрелки</a></span>
+            <span><a href="#" aria-label="Стрелки">Стрелки</a></span>
           </div>
           <article class="catalog-goods">
             <h2 class="visuali-hidden">Каталог товаров</h2>
             <div class="catalog-goods-item">
               <img src="img/item-1.png" alt="селфи-палка" width="100">
-              <span>Любительская селфи-палка</span>
+              <a href="#" aria-label="Любительская селфи-палка"><h3>Любительская селфи-палка</h3></a>
               <span>500 руб.</span>
             </div>
             <div class="catalog-goods-item">
               <img src="img/item-2.png" alt="селфи-палка" width="100">
-              <span>Профессиональная селфи-палка </span>
+              <a href="#" aria-label="Профессиональная селфи-палка"><h3>Профессиональная селфи-палка</h3></a>
               <span>1500 руб.</span>
             </div>
             <div class="catalog-goods-item">
               <img src="img/item-3.png" alt="селфи-палка" width="100">
-              <span>Непотопляемая селфи-палка</span>
+              <a href="#" aria-label="Непотопляемая селфи-палка"><h3>Непотопляемая селфи-палка</h3></a>
               <span>2500 руб.</span>
             </div>
             <div class="catalog-goods-item">
               <img src="img/item-4.png" alt="селфи-палка" width="100">
-              <span>Селфи-палка «Следуй за мной»</span>
+              <a href="#" aria-label="Селфи-палка «Следуй за мной»"><h3>Селфи-палка «Следуй за мной»</h3></a>
               <span>4900 руб.</span>
             </div>
           </article>
           <div class="catalog-footer">
-            <a href="#">Назад</a>
+            <a href="#" aria-label="Назад">Назад</a>
             <ul>
-              <li>1</li>
-              <li>2</li>
-              <li>3</li>
+              <li><a href="#" aria-label="1">1</a></li>
+              <li><a href="#" aria-label="2">2</a></li>
+              <li><a href="#" aria-label="3">3</a></li>
             </ul>
-            <a href="#">Вперед</a>
+            <a href="#" aria-label="Вперед">Вперед</a>
           </div>
         </section>
 
@@ -160,7 +163,7 @@
             <li>Гарантия</li>
             <li>Контакты</li>
           </ul>
-          <span>Тел.: +7 (495) 495-95-95</span>
+          <a href="#" aria-label="Тел.: +7 (495) 495-95-95">Тел.: +7 (495) 495-95-95</a>
         </div>
         <div class="social">
           <ul>
@@ -177,7 +180,9 @@
               <img src="img/twitter.png" alt="twitter">
             </li>
           </ul>
-          <img src="img/logo-html.png" alt="logohtmlacademy">
+          <a href="https://htmlacademy.ru/intensive/htmlcss" class="htmlacademy" aria-label="Академия" title="Html академия">
+            <img src="img/logo-html.png" alt="logo html academy">
+          </a>
         </div>
       </footer>
     </div>
