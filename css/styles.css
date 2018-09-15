@@ -33,6 +33,7 @@ html{
   text-transform: uppercase;
   background-color: #ffffff;
   color: #000000;
+  width: 100%;
 }
 a, ul, li{
   text-decoration: none;
@@ -102,6 +103,7 @@ a, ul, li{
 .header-search input{
   border: none;
   background-color: inherit;
+  background-color: transparent;
   font-size: 15px;
   line-height: 30px;
   font-weight: normal;
@@ -254,13 +256,24 @@ color: rgba(0, 0, 0, 0.3);
   color: rgba(0, 0, 0, 0.3);
 }
 
-/*----------------------------------------------------------*/
+/*----------------------------------------------------------*//*----------------------------------------------------------*//*----------------------------------------------------------*//*----------------------------------------------------------*//*----------------------------------------------------------*//*----------------------------------------------------------*//*----------------------------------------------------------*//*----------------------------------------------------------*//*----------------------------------------------------------*//*----------------------------------------------------------*//*----------------------------------------------------------*/
 
 .main-delivery{
-  background-color: #e5e5e5;
+  position: relative;
   font-size: 18px;
   line-height: 24px;
   font-weight: bold;
+
+}
+
+.main-delivery-fon{
+  position: absolute;
+  background-color: #e5e5e5;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 290px;
+  z-index: 0;
 }
 .delivery-menu li{
   width: 160px;
@@ -869,13 +882,16 @@ a.catalog-number-activ:hover{
 /*   Сетка */
 .content{
   position: relative;
-  width: 1160px;
   margin: 40px auto 0;
+
 }
 .header{
-  padding: 0 60px;
+  position: relative;
   background-color: #f7e296;
   min-height: 300px;
+  width: 1040px;
+  margin: 0 auto;
+  padding: 0 60px;
 }
 .header-catalog{
   min-height: 187px;
@@ -960,8 +976,16 @@ a.catalog-number-activ:hover{
 }
 /**//**//**//**//**//**//**//**//**//**//**//**/
 
+
+
+
+
+
+
 .main-sidebar{
   position: relative;
+  width: 1160px;
+  margin: 0 auto;
 }
 .main-photo img{
   position: absolute;
@@ -971,6 +995,7 @@ a.catalog-number-activ:hover{
 .main-intro{
   min-height: 400px;
   margin-bottom: 40px;
+  width: 1160px;
 }
 .main-content{
   position: absolute;
@@ -1068,12 +1093,14 @@ a.catalog-number-activ:hover{
 }
 /* ------------------------------------ */
 .main-ico{
+  margin: 0 auto;
+  display: block;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
   width: 1160px;
   min-height: 322px;
-  margin: 40px 0;
+  margin: 40px auto;
 }
 .main-goods{
     text-align: left;
@@ -1093,29 +1120,29 @@ a.catalog-number-activ:hover{
 }
 /* ------------------------------------ */
 .main-delivery{
-  position: relative;
-  margin: 0 -140px;
-  margin-top: 140px;
-  padding: 0 140px;
-  width: 1160px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
   min-height: 288px;
+  text-align: center;
 }
 .delivery-menu{
   width: 280px;
   height: 255px;
-  position: absolute;
   border-right: 7px solid black;
-  left: 137px;
-  top: -100px;
   padding-top: 64px;
-
+  margin-bottom: 70px;
+  z-index: 3;
 }
 .delivery-menu-item{
-  position: absolute;
-  margin-right: 140px;
-  right: 0;
-  top: -74px;
-  width: 760px;
+  width: 860px;
+}
+.main-credit,
+.main-guarantee,
+.main-deliverys{
+  position: relative;
+  margin-left: 118px;
+  margin-top: 74px;
 }
 .main-deliverys h3,
 .main-deliverys p,
@@ -1135,11 +1162,18 @@ a.catalog-number-activ:hover{
 .main-deliverys img,
 .main-guarantee img,
 .main-credit img{
-  position: absolute;
+
   right: 67px;
   top: 60px;
 }
+.delivery-img{
+  position: absolute;
+  top: 12px;
+  right: 52px;
+}
 .manufacturer{
+  width: 1160px;
+  margin: 0 auto;
   display: flex;
   justify-content: space-between;
   margin-top: 93px;
@@ -1148,8 +1182,9 @@ a.catalog-number-activ:hover{
 /*   letter-spacing: 5px;     */
 .contact{
   display: flex;
-  min-width: 660px;
-  min-height: 657px;
+  min-height: 660px;
+  width: 1160px;
+  margin: 0 auto;
 }
 .contact-about{
   position: relative;
@@ -1257,26 +1292,25 @@ a.catalog-number-activ:hover{
 /*******************************************/
 
 .footers{
-  width: 1160px;
-  margin: 0 -140px;
-  padding: 0 140px;
   min-height: 232px;
   display: flex;
   flex-direction: column;
 }
 .footers-head{
+  margin: 0 auto;
   margin-top: 60px;
   margin-bottom: 24px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  width: 1160px;
 }
 .footers-head-menu{
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-end;
-  margin-right: -45px;
   width: 840px;
+  text-align: right;
 }
 .footers-head-menu li{
   width: 120px;
@@ -1288,6 +1322,8 @@ li.footers-menu-catalogs{
   width: 115px;
 }
 .addres{
+  margin: 0 auto;
+  width: 1160px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -1316,8 +1352,10 @@ li.footers-menu-catalogs{
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  margin: 0 auto;
   margin-top: 60px;
   margin-bottom: 60px;
+  width: 1160px;
 }
 .social span{
   width: 80px;
@@ -1346,17 +1384,12 @@ li.footers-menu-catalogs{
 .htmlacademy-logo{
   text-align: right;
   width: 80px;
-  margin-right: -20px;
 }
 /* */ /**/
-.main-catalog{
-  position: relative;
-  margin-top: 154px;
-}
+
 .main-navigation{
-  position: absolute;
   left: 0;
-  top: -154px;
+
   width: 1040px;
   margin: 0 60px;
   display: flex;
@@ -1390,14 +1423,13 @@ li.footers-menu-catalogs{
   width: 1160px;
   margin: 0 -140px;
   padding: 0 140px;
-
 }
 .catalog-product{
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
   width: 1160px;
-  margin: 25px -140px 0;
+  margin: 50px -140px 0;
   padding: 22px 140px;
   background-color: rgba(0, 0, 0, 0.08);
 }
