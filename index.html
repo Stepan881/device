@@ -45,7 +45,7 @@
             </li>
           </ul>
           <ul class="site-navigation-catalog">
-            <li class="navigation-catalog-open"><a href="#" aria-label="Каталог товаров" style="letter-spacing: 0.19em;">Каталог товаров</a>
+            <li class="navigation-catalog-open"><a  href="catalog.html" aria-label="Каталог товаров" style="letter-spacing: 0.19em;">Каталог товаров</a>
               <ul class="site-navigation-list">
                 <li><a href="#" aria-label="Виртуальная реальность">Виртуальная реальность</a></li>
                 <li><a href="catalog.html" aria-label="Моноподы для селфи">Моноподы для селфи</a></li>
@@ -285,19 +285,22 @@
               <li>Автотрейдинг</li>
               <li>ЖелДорЭкспедиция</li>
             </ul>
-            <a href="#">Подробнее о нас</a>
+            <a href="#" style="letter-spacing: 4px;">Подробнее о нас</a>
           </div>
           <div class="contacts">
             <h2>Контакты</h2>
             <p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
             <div class="main-map">
               <h2 class="visually-hidden">Мы на карте</h2>
+              <a href="#" class="main-maps">
+                <img src="img/map.png" alt="Открыть карту" width="560" height="222">
+              </a>
             </div>
-            <a href="#">НАпишите нам</a>
+            <a href="#" style="letter-spacing: 4px;">НАпишите нам</a>
           </div>
         </section>
 <!-- ///////////////////////////// --><!-- ///////////////////////////// -->
-        <section class="popap">
+        <section class="popap display">
           <div class="popap-close">
             <a href="#" aria-label="Закрыть">
             <svg xmlns="http://www.w3.org/2000/svg" width="55" height="55">
@@ -322,7 +325,16 @@
             <button class="popap-btn" type="submit" title="Отправить">Отправить</button>
           </form>
         </section>
-        <section class="map">
+        <section class="map display">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2249.1123749473145!2d37.52742931540727!3d55.68703400453072!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54cf65f5c8955%3A0x694710ccd55501e!2z0YPQuy4g0KHRgtGA0L7QuNGC0LXQu9C10LksIDE1LCDQnNC-0YHQutCy0LAsIDExOTMxMQ!5e0!3m2!1sru!2sru!4v1536877630121"  allowfullscreen></iframe>
+
+          <div class="contact-close">
+            <a href="#" aria-label="Закрыть">
+            <svg xmlns="http://www.w3.org/2000/svg" width="55" height="55">
+            <path fill="#F0C52E" d="M27.5 0C12.312 0 0 12.312 0 27.5S12.312 55 27.5 55 55 42.688 55 27.5 42.688 0 27.5 0zm11.476 37.072l-1.486 1.426-9.99-9.574-9.987 9.574-1.488-1.426 9.988-9.573-9.987-9.573 1.487-1.425 9.987 9.573 9.988-9.573 1.487 1.425-9.989 9.574 9.99 9.572z"/></svg>
+            </a>
+          </div>
+
           <h2 class="visually-hidden">Мы на карте</h2>
           <img src="img/map-big.png" alt="Мы на карте">
         </section>
@@ -368,6 +380,7 @@
           <a href="#" class="footers-tel" aria-label="Тел.: +7 (495) 495-95-95">Тел.: +7 (495) 495-95-95</a>
         </div>
         <div class="social">
+          <span></span>
           <ul>
             <li>
               <a class="social-button" href="#" aria-label="facebook">
@@ -397,12 +410,13 @@
               </a>
             </li>
           </ul>
-          <a href="https://htmlacademy.ru/intensive/htmlcss" class="htmlacademy" aria-label="Академия" title="Html академия">
-            <svg xmlns="http://www.w3.org/2000/svg" width="26.943" height="34.09" fill="#ffc600">
-              <path d="M13.62.017L13.472 0 0 1.412v24.661l13.473 8.017 13.43-7.99.042-.025V1.412L13.62.017zm11.399 12.11L13.495 5.334l-.001-.104-.087.05-.088-.056v.109L1.925 12.118V3.147l11.548-1.212L25.02 3.147v8.98zm-11.614-5.34L24.923 13.5l-4.479 2.64-7.093-4.221-.014 1.415 5.904 3.513-.86.507-5.03-2.992-.014 1.415 3.827 2.275-.782.523-3.031-1.787-.014 1.413 1.853 1.091-1.8 1.081-11.356-6.751 11.371-6.835zm-11.48 8.34l11.411 6.791.016 1.044-7.942-4.728-.015 1.416 7.979 4.795.018 1.076-7.973-4.74-.013 1.414 8.021 4.822.046.025 8.143-4.872-.011-5.177 3.415-2.036v10.021L13.472 31.85 1.925 24.979v-9.852z"/>
-            </svg>
-
-          </a>
+          <div class="htmlacademy-logo">
+            <a href="https://htmlacademy.ru/intensive/htmlcss" class="htmlacademy" aria-label="Академия" title="Html академия">
+              <svg xmlns="http://www.w3.org/2000/svg" width="26.943" height="34.09" fill="#ffc600">
+                <path d="M13.62.017L13.472 0 0 1.412v24.661l13.473 8.017 13.43-7.99.042-.025V1.412L13.62.017zm11.399 12.11L13.495 5.334l-.001-.104-.087.05-.088-.056v.109L1.925 12.118V3.147l11.548-1.212L25.02 3.147v8.98zm-11.614-5.34L24.923 13.5l-4.479 2.64-7.093-4.221-.014 1.415 5.904 3.513-.86.507-5.03-2.992-.014 1.415 3.827 2.275-.782.523-3.031-1.787-.014 1.413 1.853 1.091-1.8 1.081-11.356-6.751 11.371-6.835zm-11.48 8.34l11.411 6.791.016 1.044-7.942-4.728-.015 1.416 7.979 4.795.018 1.076-7.973-4.74-.013 1.414 8.021 4.822.046.025 8.143-4.872-.011-5.177 3.415-2.036v10.021L13.472 31.85 1.925 24.979v-9.852z"/>
+              </svg>
+            </a>
+          </div>
         </div>
       </footer>
     </div>
