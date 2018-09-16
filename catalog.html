@@ -105,136 +105,150 @@
               </li>
             </ul>
           </div>
-          <aside class="search-products">
-            <form class="catalog-search" action="https://echo.htmlacademy.ru" method="post">
-              <div class="search-price">
-                <div class="search-price-box">
+            <div class="search-products-conteiner">
+              <div class="search-products-conteiners">
+                <aside class="search-products">
+                  <form class="catalog-search" action="https://echo.htmlacademy.ru" method="post">
+                    <div class="search-price">
+                      <div class="search-price-conteiner">
 
-                  <span>Стоимость</span>
+                        <div class="search-price-box">
 
-                  <div class="search-scroll">
-                    <div class="bar">
-                      <div class="status-bar"></div>
+                          <span>Стоимость</span>
+
+                          <div class="search-scroll">
+                            <div class="bar">
+                              <div class="status-bar"></div>
+                            </div>
+                            <div class="l-scroll">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="23" viewBox="0 0 20 23">
+                                  <path fill="#ABABAB" d="M10 20C4.477 20 0 15.522 0 10v2c0 5.522 4.477 10 10 10 5.522 0 10-4.478 10-10v-2c0 5.522-4.478 10-10 10z" opacity=".3"/>
+                                  <circle cx="10" cy="10" r="10" fill="#FFF"/>
+                                  <circle cx="10" cy="10" r="2" fill="#ABABAB"/>
+                              </svg>
+                            </div>
+                            <div class="r-scroll">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="23" viewBox="0 0 20 23">
+                                  <path fill="#ABABAB" d="M10 20C4.477 20 0 15.522 0 10v2c0 5.522 4.477 10 10 10 5.522 0 10-4.478 10-10v-2c0 5.522-4.478 10-10 10z" opacity=".3"/>
+                                  <circle cx="10" cy="10" r="10" fill="#FFF"/>
+                                  <circle cx="10" cy="10" r="2" fill="#ABABAB"/>
+                              </svg>
+                            </div>
+                          </div>
+                          <span>от <input type="text" name="l-scroll" value="0"></span>
+                          <span>до <input type="text" name="r-scroll" value="5000"></span>
+                        </div>
+                        <div class="search-color">
+                          <h2>Цвет</h2>
+                          <label for="black" tabindex="0">
+                            <input type="checkbox" class="visually-hidden checkbox" name="black" id="black" aria-label="Черный" checked tabindex="-1">
+                              <span class="checkbox-item"></span>
+                              Черный
+                          </label>
+                          <label for="white" tabindex="0">
+                            <input type="checkbox" class="visually-hidden checkbox" name="white" id="white" aria-label="Белый" tabindex="-1">
+                              <span class="checkbox-item"></span>
+                              Белый
+                          </label>
+                          <label for="blue" tabindex="0">
+                            <input type="checkbox" class="visually-hidden checkbox" name="blue" id="blue" aria-label="Синий" checked tabindex="-1">
+                              <span class="checkbox-item"></span>
+                              Синий
+                          </label>
+                          <label for="red" tabindex="0">
+                            <input type="checkbox" class="visually-hidden checkbox" name="red" id="red" aria-label="Красный" checked tabindex="-1">
+                              <span class="checkbox-item"></span>
+                              Красный
+                          </label>
+                          <label for="pink" tabindex="0">
+                            <input type="checkbox" class="visually-hidden checkbox" name="pink" id="pink" aria-label="Розовый" tabindex="-1">
+                              <span class="checkbox-item"></span>
+                              Розовый
+                          </label>
+                        </div>
+                        <div class="search-bluetooth">
+                          <span>Bluetooth</span>
+                          <label for="bluetooth-on">
+                            <input type="radio" class="visually-hidden radiobox" id="bluetooth-on" name="bluetooth" value="Есть" checked>
+                            <span class="radiobox-item"></span>
+                            Есть
+                          </label>
+                          <label for="bluetooth-off">
+                            <input type="radio" class="visually-hidden radiobox" id="bluetooth-off" name="bluetooth" value="Нет">
+                            <span class="radiobox-item"></span>
+                            Нет
+                          </label>
+                        </div>
+                        <button class="search-btn" type="submit" title="Отправить">Отправить</button>
+
+                      </div>
+
                     </div>
-                    <div class="l-scroll">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="23" viewBox="0 0 20 23">
-                          <path fill="#ABABAB" d="M10 20C4.477 20 0 15.522 0 10v2c0 5.522 4.477 10 10 10 5.522 0 10-4.478 10-10v-2c0 5.522-4.478 10-10 10z" opacity=".3"/>
-                          <circle cx="10" cy="10" r="10" fill="#FFF"/>
-                          <circle cx="10" cy="10" r="2" fill="#ABABAB"/>
-                      </svg>
-                    </div>
-                    <div class="r-scroll">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="23" viewBox="0 0 20 23">
-                          <path fill="#ABABAB" d="M10 20C4.477 20 0 15.522 0 10v2c0 5.522 4.477 10 10 10 5.522 0 10-4.478 10-10v-2c0 5.522-4.478 10-10 10z" opacity=".3"/>
-                          <circle cx="10" cy="10" r="10" fill="#FFF"/>
-                          <circle cx="10" cy="10" r="2" fill="#ABABAB"/>
-                      </svg>
-                    </div>
-                  </div>
-                  <span>от <input type="text" name="l-scroll" value="0"></span>
-                  <span>до <input type="text" name="r-scroll" value="5000"></span>
-                </div>
-                <div class="search-color">
-                  <h2>Цвет</h2>
-                  <label for="black" tabindex="0">
-                    <input type="checkbox" class="visually-hidden checkbox" name="black" id="black" aria-label="Черный" checked tabindex="-1">
-                      <span class="checkbox-item"></span>
-                      Черный
-                  </label>
-                  <label for="white" tabindex="0">
-                    <input type="checkbox" class="visually-hidden checkbox" name="white" id="white" aria-label="Белый" tabindex="-1">
-                      <span class="checkbox-item"></span>
-                      Белый
-                  </label>
-                  <label for="blue" tabindex="0">
-                    <input type="checkbox" class="visually-hidden checkbox" name="blue" id="blue" aria-label="Синий" checked tabindex="-1">
-                      <span class="checkbox-item"></span>
-                      Синий
-                  </label>
-                  <label for="red" tabindex="0">
-                    <input type="checkbox" class="visually-hidden checkbox" name="red" id="red" aria-label="Красный" checked tabindex="-1">
-                      <span class="checkbox-item"></span>
-                      Красный
-                  </label>
-                  <label for="pink" tabindex="0">
-                    <input type="checkbox" class="visually-hidden checkbox" name="pink" id="pink" aria-label="Розовый" tabindex="-1">
-                      <span class="checkbox-item"></span>
-                      Розовый
-                  </label>
-                </div>
-                <div class="search-bluetooth">
-                  <span>Bluetooth</span>
-                  <label for="bluetooth-on">
-                    <input type="radio" class="visually-hidden radiobox" id="bluetooth-on" name="bluetooth" value="Есть" checked>
-                    <span class="radiobox-item"></span>
-                    Есть
-                  </label>
-                  <label for="bluetooth-off">
-                    <input type="radio" class="visually-hidden radiobox" id="bluetooth-off" name="bluetooth" value="Нет">
-                    <span class="radiobox-item"></span>
-                    Нет
-                  </label>
-                </div>
-              <button class="search-btn" type="submit" title="Отправить">Отправить</button>
-              </div>
-            </form>
-          </aside>
-          <div class="catalog-goods">
-            <article class="catalog-goods-item">
-              <div class="goods-item-amateur">
-                <h2 class="visually-hidden">Любительская селфи-палка</h2>
-                <div class="goods-item-active">
-                  <a href="#" class="item-active-buy">В корзину</a>
-                  <a href="#" class="item-active-compare">Добавить к сравнению</a>
-                </div>
-              </div>
-              <a href="#" class="goods-item-name" aria-label="Любительская селфи-палка"><h3>Любительская селфи-палка</h3></a>
-              <span>500 руб.</span>
-            </article>
-            <article class="catalog-goods-item">
-              <div class="goods-item-professional">
-                <h2 class="visually-hidden">Профессиональная селфи-палка</h2>
-                <div class="goods-item-active">
-                  <a href="#" class="item-active-buy">В корзину</a>
-                  <a href="#" class="item-active-compare">Добавить к сравнению</a>
-                </div>
-              </div>
-              <a href="#" class="goods-item-name" aria-label="Профессиональная селфи-палка"><h3>Профессиональная селфи-палка</h3></a>
-              <span>1500 руб.</span>
-            </article>
-            <article class="catalog-goods-item">
-              <div class="goods-item-unsinkable">
-                <h2 class="visually-hidden">Непотопляемая селфи-палка</h2>
-                <div class="goods-item-active">
-                  <a href="#" class="item-active-buy">В корзину</a>
-                  <a href="#" class="item-active-compare">Добавить к сравнению</a>
-                </div>
-              </div>
-              <a href="#" class="goods-item-name" aria-label="Непотопляемая селфи-палка"><h3>Непотопляемая селфи-палка</h3></a>
-              <span>2500 руб.</span>
-            </article>
-            <article class="catalog-goods-item">
-              <div class="goods-item-follow">
-                <h2 class="visually-hidden">Селфи-палка «Следуй за мной»</h2>
-                <div class="goods-item-active">
-                  <a href="#" class="item-active-buy">В корзину</a>
-                  <a href="#" class="item-active-compare">Добавить к сравнению</a>
-                </div>
-              </div>
-              <a href="#" class="goods-item-name" aria-label="Селфи-палка «Следуй за мной»"><h3>Селфи-палка «Следуй за мной»</h3></a>
-              <span>4900 руб.</span>
-            </article>
+                  </form>
+                </aside>
 
 
-            <div class="catalog-footer">
-              <a href="#" aria-label="Назад" class="catalog-footer-backward">Назад</a>
-              <ul class="catalog-footer-number">
-                <li><a href="#" class="catalog-number-activ" aria-label="1">1</a></li>
-                <li><a href="#" aria-label="2">2</a></li>
-                <li><a href="#" aria-label="3">3</a></li>
-              </ul>
-              <a href="#" aria-label="Вперед" class="catalog-footer-forward">Вперед</a>
-            </div>
+              </div>
+              <div class="catalog-goods">
+                <div class="catalog-goods-conteiners">
+
+                
+                  <article class="catalog-goods-item">
+                    <div class="goods-item-amateur">
+                      <h2 class="visually-hidden">Любительская селфи-палка</h2>
+                      <div class="goods-item-active">
+                        <a href="#" class="item-active-buy">В корзину</a>
+                        <a href="#" class="item-active-compare">Добавить к сравнению</a>
+                      </div>
+                    </div>
+                    <a href="#" class="goods-item-name" aria-label="Любительская селфи-палка"><h3>Любительская селфи-палка</h3></a>
+                    <span>500 руб.</span>
+                  </article>
+                  <article class="catalog-goods-item">
+                    <div class="goods-item-professional">
+                      <h2 class="visually-hidden">Профессиональная селфи-палка</h2>
+                      <div class="goods-item-active">
+                        <a href="#" class="item-active-buy">В корзину</a>
+                        <a href="#" class="item-active-compare">Добавить к сравнению</a>
+                      </div>
+                    </div>
+                    <a href="#" class="goods-item-name" aria-label="Профессиональная селфи-палка"><h3>Профессиональная селфи-палка</h3></a>
+                    <span>1500 руб.</span>
+                  </article>
+                  <article class="catalog-goods-item">
+                    <div class="goods-item-unsinkable">
+                      <h2 class="visually-hidden">Непотопляемая селфи-палка</h2>
+                      <div class="goods-item-active">
+                        <a href="#" class="item-active-buy">В корзину</a>
+                        <a href="#" class="item-active-compare">Добавить к сравнению</a>
+                      </div>
+                    </div>
+                    <a href="#" class="goods-item-name" aria-label="Непотопляемая селфи-палка"><h3>Непотопляемая селфи-палка</h3></a>
+                    <span>2500 руб.</span>
+                  </article>
+                  <article class="catalog-goods-item">
+                    <div class="goods-item-follow">
+                      <h2 class="visually-hidden">Селфи-палка «Следуй за мной»</h2>
+                      <div class="goods-item-active">
+                        <a href="#" class="item-active-buy">В корзину</a>
+                        <a href="#" class="item-active-compare">Добавить к сравнению</a>
+                      </div>
+                    </div>
+                    <a href="#" class="goods-item-name" aria-label="Селфи-палка «Следуй за мной»"><h3>Селфи-палка «Следуй за мной»</h3></a>
+                    <span>4900 руб.</span>
+                  </article>
+
+                </div>
+                <div class="catalog-footer">
+                  <a href="#" aria-label="Назад" class="catalog-footer-backward">Назад</a>
+                  <ul class="catalog-footer-number">
+                    <li><a href="#" class="catalog-number-activ" aria-label="1">1</a></li>
+                    <li><a href="#" aria-label="2">2</a></li>
+                    <li><a href="#" aria-label="3">3</a></li>
+                  </ul>
+                  <a href="#" aria-label="Вперед" class="catalog-footer-forward">Вперед</a>
+                </div>
+              </div>
           </div>
         </section>
 <!-- ///////////////////////////// -->
