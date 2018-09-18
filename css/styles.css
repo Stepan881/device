@@ -709,7 +709,7 @@ margin-top: 10px;
   width: 27px;
   height: 27px;
   left: 0;
-  top: 0;
+  top: 7px;
   cursor: pointer;
 }
 .radiobox:checked + .radiobox-item{
@@ -719,7 +719,7 @@ margin-top: 10px;
   width: 27px;
   height: 27px;
   left: 0;
-  top: 0;
+  top: 7px;
   cursor: pointer;
 }
 .radiobox:hover + .radiobox-item{
