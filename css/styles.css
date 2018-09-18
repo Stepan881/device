@@ -308,6 +308,7 @@ color: rgba(0, 0, 0, 0.3);
   background-image: linear-gradient(transparent 40%, #f0c52e 40%, #f0c52e 60%, transparent 60% );
   padding-top: 9px;
   padding-bottom: 7px;
+  cursor: pointer;
 }
 .delivery-menu a:hover{
   width: 160px;
