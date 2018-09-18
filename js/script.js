@@ -87,3 +87,87 @@ btn3.addEventListener("click", function(evt){
   guarantee.classList.remove("display-show");
 
 });
+
+
+var bt1 = document.querySelector(".bt1");
+var bt2 = document.querySelector(".bt2");
+var bt3 = document.querySelector(".bt3");
+
+var btt1 = document.querySelector(".btt1");
+var btt2 = document.querySelector(".btt2");
+var btt3 = document.querySelector(".btt3");
+
+var mainbt1 = document.querySelector(".main-bt1");
+var mainbt2 = document.querySelector(".main-bt2");
+var mainbt3 = document.querySelector(".main-bt3");
+
+bt1.addEventListener("click", function(evt){
+  evt.preventDefault();
+
+  btt1.classList.remove("display");
+
+
+  btt2.classList.add("display");
+  btt3.classList.add("display");
+  console.log("1");
+
+  mainbt1.classList.remove("display");
+
+  mainbt2.classList.add("display");
+  mainbt3.classList.add("display");
+
+});
+
+
+bt2.addEventListener("click", function(evt){
+  evt.preventDefault();
+
+  btt2.classList.remove("display");
+
+
+  btt1.classList.add("display");
+  btt3.classList.add("display");
+  console.log("2");
+
+  mainbt2.classList.remove("display");
+
+  mainbt1.classList.add("display");
+  mainbt3.classList.add("display");
+});
+
+
+bt3.addEventListener("click", function(evt){
+  evt.preventDefault();
+
+  btt3.classList.remove("display");
+
+  btt1.classList.add("display");
+  btt2.classList.add("display");
+  console.log("3");
+
+  mainbt3.classList.remove("display");
+
+  mainbt2.classList.add("display");
+  mainbt1.classList.add("display");
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//

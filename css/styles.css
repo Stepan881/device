@@ -404,19 +404,21 @@ a.delivery-menu-active:active{
   line-height: 24px;
   font-weight: bold;
   border: none;
-  background-image: linear-gradient(white 40%, #f0c52e 40%, #f0c52e 60%, white 60% );
-  padding: 0 20px;
+  background-image: linear-gradient(transparent 40%, #f0c52e 40%, #f0c52e 60%, transparent 60% );
+  cursor: pointer;
+  padding: 9px 20px 7px;
+
 }
 .contact a:not(.main-maps):hover{
   border: none;
   background-image: none;
-  padding: 0 20px;
+  padding: 9px 20px 7px;
   background-color: #f0c52e;
 }
 .contact a:not(.main-maps):active{
   border: none;
   background-image: none;
-  padding: 0 20px;
+  padding: 9px 20px 7px;
   background-color: #000;
   color: #f0c52e;
 }
@@ -654,6 +656,9 @@ a.footers-tel{
   position: relative;
   padding-left: 50px;
 }
+.search-color span{
+margin-top: 10px;
+}
 .checkbox + .checkbox-item{
   position: absolute;
   background-image: url("../img/checkbox-off.svg");
@@ -696,6 +701,7 @@ a.footers-tel{
   position: relative;
   padding-left: 40px;
 }
+
 .radiobox + .radiobox-item{
   position: absolute;
   background-image: url("../img/radio-off.svg");
@@ -1018,10 +1024,10 @@ a.catalog-number-activ:hover{
   z-index: 10;
   background-color: #f7e296;
   width: 1040px;
-  min-height: 148px;
+  min-height: 138px;
   left: -60px;
   top: 0;
-  padding: 10px 60px;
+  padding: 30px 60px 0;
   display: none;
 }
 
@@ -1120,6 +1126,7 @@ a.catalog-number-activ:hover{
   position: relative;
   width: 1160px;
   margin: 0 auto;
+  z-index: 0;
 }
 .main-photo img{
   position: absolute;
@@ -1132,15 +1139,24 @@ a.catalog-number-activ:hover{
   margin-bottom: 40px;
   width: 1160px;
 }
+.main-intro::before{
+
+}
 .main-content{
   position: absolute;
   width: 560px;
   margin-left: 600px;
   top: -79px;
+  z-index: 1px;
+}
+.main-ligo{
+  min-height: 190px;
 }
 .main-ligo h3{
-  width: 400px;
+  position: sticky;
+  width: 550px;
   margin-bottom: 0;
+
 }
 .main-ligo p{
   width: 500px;
@@ -1152,7 +1168,7 @@ a.catalog-number-activ:hover{
   letter-spacing: 3px;
 }
 .main-info{
-  margin-top: 40px;
+  margin-top: 56px;
   text-align: left;
   display: flex;
   text-transform: none;
@@ -1187,6 +1203,7 @@ a.catalog-number-activ:hover{
   top: -18px;
   right: 0;
   color: #fff;
+  z-index: 2;
 }
 .main-content-two:before{
  position: absolute;
@@ -1202,6 +1219,7 @@ a.catalog-number-activ:hover{
 }
 .main-content-three:before{
  position: absolute;
+  display: block;
  content: "03";
  font-size: 181px;
  line-height: 127px;
@@ -1211,6 +1229,7 @@ a.catalog-number-activ:hover{
  top: -18px;
  right: 0;
  color: #fff;
+ z-index: 0;
 }
 .main-check{
   position: absolute;
@@ -1229,6 +1248,16 @@ a.catalog-number-activ:hover{
   border: 2px solid black;
   background-color: transparent;
   margin: 0 8px;
+}
+
+
+.checkbt{
+  display: block;
+  width: 6px;
+  height: 6px;
+  background-color: black;
+  border-radius: 50%;
+  margin: 1px;
 }
 /* ------------------------------------ */
 .main-ico{
