@@ -108,7 +108,7 @@ ul, li{
   color: rgba(0, 0, 0, 0.3);
   padding-left: 38px;
   padding-right: 100px;
-  border: 2px solid inherit;
+  border: 2px solid #f7e296;
   width: 440px;
   height: 45px;
 }
