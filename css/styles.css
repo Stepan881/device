@@ -195,6 +195,7 @@ ul, li{
   font-size: 15px;
   line-height: 36px;
   font-weight: normal;
+  letter-spacing: 0;
 }
 .site-navigation-list a:hover{
 color: rgba(0, 0, 0, 0.6);
